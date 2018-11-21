@@ -62,7 +62,8 @@ module.exports = function (ctx) {
         'QCardActions',
         'QModal',
         'QJumbotron',
-        'QRange'
+        'QRange',
+        'QParallax'
       ],
       directives: [
         'Ripple'
