@@ -13,7 +13,7 @@
                             <q-input v-model="subject" float-label="Subject" name="" type="text" />
                             <q-input v-model="message" type="textarea" name="" float-label="Message" :max-height="100"
                                 rows="5" />
-                            <form action="//formspree.io/treverj1029@gmail.com" method="POST">
+                            <form action="//formspree.io/trever@ebenezerwebsites.com" method="POST">
                                 <q-btn type="submit" outline color="white" class="q-mt-sm">Send</q-btn>
                                 <div class="hidden">
                                     <input type="text" name="name" v-model="name">
