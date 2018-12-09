@@ -1,113 +1,182 @@
 <template>
-  <q-layout view="lHh Lpr lFf" class="background">
-    <q-layout-header>
-      <!-- <q-toolbar color="primary">
-        <q-btn flat dense round @click="leftDrawerOpen = !leftDrawerOpen" aria-label="Menu" class="mobile-only">
-          <q-icon name="menu" />
-        </q-btn>
+  <q-layout view="lHh Lpr fff" class="">
+    <div class="desktop-only background">
 
-        <q-toolbar-title>
-          Peruser
-        </q-toolbar-title>
+      <q-layout-header flat class="row justify-center white">
+        <q-toolbar color="transparent">
+          <q-btn @click="$router.push('/')" flat class="tab">
+            <img class=" mini-logo" src="../statics/ee.png" alt="Ebenenezer logo small"></img>
+          </q-btn>
+          <span class="col-xs-1 col-md-8"></span>
+          <a class="col-xs-3 col-md-1 tab" href="/#/about">About Us</a>
+          <a class="col-xs-3 col-md-1 tab" href="/#/work">Our Work</a>
+          <a class="col-xs-3 col-md-1 tab" href="/#/contact">Contact Us</a>
+        </q-toolbar>
+      </q-layout-header>
 
-        <q-tabs align="center" class="shadow-2 tabs desktop-only">
-          <q-route-tab v-if="loggedIn" name="account" slot="title" to="/account" label="Account"/>
-          <q-tab v-if="loggedIn" @click="logout">Logout</q-tab>
-        </q-tabs>
 
-        <q-tabs align="center" class="shadow-2 tabs desktop-only">
-          <q-route-tab v-for="tab in tabs" slot="title" :label="tab.name" :name="tab.name" :to="tab.link" />
-        </q-tabs>
+      <q-page-container>
+        <router-view />
+      </q-page-container>
 
-      </q-toolbar> -->
-    </q-layout-header>
+      <q-layout-footer reveal>
+        <q-toolbar>
+          <q-toolbar-title>
+            &copy;2018 Ebenezer Websites LLC
+          </q-toolbar-title>
+          <small class="q-mr-lg">Boise, ID</small>
+          <small class="q-mr-lg">(303)-827-1510</small>
+          <small>Trever@EbenezerWebsites.com</small>
+        </q-toolbar>
+      </q-layout-footer>
+    </div>
+    <div class="mobile-only black-background">
 
-    <!-- Mobile Tabs -->
-    <!-- <q-layout-drawer v-model="leftDrawerOpen" class="mobile-only">
-      <q-list no-border link inset-delimiter v-for="tab in tabs">
-        <q-item @click.native="push(tab)">
-          <q-item-side icon="" />
-          <q-item-main :label="tab.name" />
-        </q-item>
-      </q-list>
-    </q-layout-drawer> -->
+      <q-layout-header flat class="row justify-center white">
+        <q-toolbar color="transparent">
+          <q-btn @click="$router.push('/')" flat class="tab">
+            <img class=" mini-logo" src="../statics/white-ee.png" alt="Ebenenezer logo small"></img>
+          </q-btn>
+          <span class="col-xs-1 col-md-8"></span>
+          <a class="col-xs-3 col-md-1 tab" href="/#/about">About Us</a>
+          <a class="col-xs-3 col-md-1 tab" href="/#/work">Our Work</a>
+          <a class="col-xs-3 col-md-1 tab" href="/#/contact">Contact Us</a>
+        </q-toolbar>
+      </q-layout-header>
 
-    <q-page-container>
-      <router-view />
-    </q-page-container>
+
+      <q-page-container>
+        <router-view />
+      </q-page-container>
+
+      <q-layout-footer>
+        <q-toolbar>
+          <q-toolbar-title class="row justify-center">
+            <div class="col-xs-12">
+              <small class="q-mr-lg">Boise, ID</small>
+            </div>
+            <div class="col-xs-12">
+              <small class="q-mr-lg">(303)-827-1510</small>
+              <small>Trever@EbenezerWebsites.com</small>
+            </div>
+            <div class="col-xs-12 q-mt-xs">
+
+              &copy;2018 Ebenezer Websites LLC
+            </div>
+          </q-toolbar-title>
+        </q-toolbar>
+      </q-layout-footer>
+    </div>
 
   </q-layout>
 </template>
 
 <script>
-import { openURL } from "quasar";
+  import { openURL } from "quasar";
 
-export default {
-  name: "MyLayout",
-  data() {
-    return {
-      leftDrawerOpen: false
-    };
-  },
-  computed: {
-    tabs() {
-      return this.$store.state.tabs.tabs;
+  export default {
+    name: "MyLayout",
+    data() {
+      return {
+        leftDrawerOpen: false
+      };
     },
-    loggedIn() {
-      return this.$store.state.auth.loggedIn;
-    }
-  },
-  methods: {
-    openURL,
-    push(tab) {
-      this.$router.push(tab.link);
+    computed: {
+      tabs() {
+        return this.$store.state.tabs.tabs;
+      },
+      loggedIn() {
+        return this.$store.state.auth.loggedIn;
+      },
+      home() {
+        if (this.$route.path == "/") {
+          return true;
+        } else {
+          return false;
+        }
+      }
     },
-    logout() {
-      this.$store.dispatch("auth/logout");
+    methods: {
+      openURL,
+      push(tab) {
+        this.$router.push(tab.link);
+      },
+      logout() {
+        this.$store.dispatch("auth/logout");
+      }
     }
-  }
-};
+  };
 </script>
 
 <style>
-.background {
-  background: url(../assets/river.jpg) no-repeat center center fixed;
-  /* background-color: white; */
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100%;
-  overflow: hidden;
-}
+  .black-background {
+    background-color: black;
+  }
 
-.second-background {
-  background-color: rgba(17, 17, 17, 0.75);
-  padding: 1rem;
-}
+  .mini-logo {
+    /* width: 1rem; */
+    max-height: 2rem;
+    max-width: 2rem;
+  }
 
-.set-size-outer {
-  max-width: 65vh;
-}
+  .tab {
+    margin-top: 1rem;
+    color: white;
+  }
 
-.white {
-  color: white;
-}
+  .q-layout-header {
+    box-shadow: none;
+  }
 
-.grow {
-  transition: all 0.35s ease-in-out;
-  margin-bottom: 2rem;
-}
+  .q-toolbar {
+    box-shadow: none;
+    background-color: transparent;
+  }
 
-.grow:hover {
-  transform: scale(1.05);
-}
-.white-hr {
-  height: 1px;
-  min-height: 1px;
-  /* display: block; */
-  border: none;
-  width: 50%;
-  background: white;
-}
+  .q-input-target {
+    color: white;
+  }
+
+  .background {
+    background: url(../assets/river.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .second-background {
+    background-color: rgba(17, 17, 17, 0.75);
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  .set-size-outer {
+    max-width: 65vh;
+  }
+
+  .white {
+    color: white;
+  }
+
+  .grow {
+    transition: all 0.35s ease-in-out;
+    margin-bottom: 2rem;
+  }
+
+  .grow:hover {
+    transform: scale(1.05);
+  }
+
+  .white-hr {
+    height: 1px;
+    min-height: 1px;
+    /* display: block; */
+    border: none;
+    width: 50%;
+    background: white;
+  }
 </style>
