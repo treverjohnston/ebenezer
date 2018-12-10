@@ -23,7 +23,7 @@ module.exports = function (ctx) {
       extendWebpack(cfg) { }
     },
     devServer: {
-      https: true,
+      // https: true,
       // port: 8080,
       open: true // opens browser window automatically
     },

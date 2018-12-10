@@ -2,7 +2,7 @@
     <q-page class="row justify-center">
         <div class="col-xs-10 second-background">
             <div class="row justify-center">
-                <div class="col-xs-11 q-mb-xl">
+                <div class="col-xs-12 col-md-11 q-mb-xl">
                     <div class="q-display-3 white">Our work</div>
                     <hr class="q-my-lg white-hr" align="left">
                     <transition-group appear enter-active-class="animated fadeInDown">
@@ -10,7 +10,8 @@
                             :key="index">
                             <div @click="openURL(item.url)">
                                 <div class="container text-center">
-                                    <img :src="item.img" :alt="item.title" class="image text-center">
+                                    <img :src="item.img" :alt="item.title" class="image text-center desktop-only">
+                                    <img :src="item.imgMob" :alt="item.title" class="mobile-image text-center mobile-only">
                                     <h3 class="middle text text-weight-light white desktop-only">{{item.title}}</h3>
                                     <h5 class="middle text text-weight-light white mobile-only">{{item.title}}</h5>
                                 </div>
@@ -58,6 +59,14 @@
         transition: 0.5s ease;
         backface-visibility: hidden;
         width: 70vw;
+    }
+
+    .mobile-image {
+        opacity: 1;
+        transition: 0.5s ease;
+        backface-visibility: hidden;
+        width: 75vw;
+        /* height: 50vh; */
     }
 
     .middle {

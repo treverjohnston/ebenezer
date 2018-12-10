@@ -1,14 +1,16 @@
 <template>
   <q-page class="">
-    <div class="row justify-center">
-      <q-jumbotron class="col-xs-12 text-center desktop-only">
+    <div class="row justify-center desktop-only">
+      <q-jumbotron class="col-xs-12 text-center">
         <transition appear enter-active-class="animated fadeInDown">
           <img class="jumbotronLogo text-center" src="~/assets/logo.png" alt="Ebenezer Websites logo">
         </transition>
       </q-jumbotron>
-      <q-jumbotron class="col-xs-12 text-center mobile-only margin-top">
+    </div>
+    <div class="row justify-center mobile-only mobile">
+      <q-jumbotron class="col-xs-12 text-center margin-top">
         <transition appear enter-active-class="animated fadeInDown">
-          <img class="jumbotronLogoMobile text-center" src="~/assets/logo.png" alt="Ebenezer Websites logo">
+          <img class="jumbotronLogoMobile text-center" src="~/assets/Small-gold.png" alt="Ebenezer Websites logo">
         </transition>
       </q-jumbotron>
     </div>
@@ -36,7 +38,11 @@
   };
 </script>
 
-<style>
+<style scoped>
+  .mobile {
+    height: 90vh;
+  }
+
   .margin-top {
     margin-top: 5rem;
   }
