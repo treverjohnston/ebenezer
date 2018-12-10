@@ -2,7 +2,7 @@
   <q-layout view="lHh Lpr fff" class="">
     <div class="desktop-only background">
 
-      <q-layout-header v-if="home" flat class="row justify-center white thin-black">
+      <q-layout-header flat class="row justify-center white thin-black">
         <q-toolbar color="transparent">
           <a href="#logo" flat class="tab">
             <img class=" mini-logo" src="../statics/white-ee.png" alt="Ebenenezer logo small"></img>
@@ -13,19 +13,6 @@
           <a class="col-xs-3 col-md-1 tab" href="#contact">Contact Us</a>
         </q-toolbar>
       </q-layout-header>
-      <!-- This else is to keep a thin black background on main page only -->
-      <q-layout-header v-else flat class="row justify-center white">
-        <q-toolbar color="transparent">
-          <a href="#logo" flat class="tab">
-            <img class=" mini-logo" src="../statics/white-ee.png" alt="Ebenenezer logo small"></img>
-          </a>
-          <span class="col-xs-1 col-md-8"></span>
-          <a class="col-xs-3 col-md-1 tab" href="#work">Our Work</a>
-          <a class="col-xs-3 col-md-1 tab" href="#about">About Us</a>
-          <a class="col-xs-3 col-md-1 tab" href="#contact">Contact Us</a>
-        </q-toolbar>
-      </q-layout-header>
-
 
       <q-page-container>
         <router-view />
