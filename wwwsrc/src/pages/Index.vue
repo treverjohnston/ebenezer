@@ -1,18 +1,40 @@
 <template>
-  <q-page class="">
-    <div class="row justify-center desktop-only">
-      <q-jumbotron class="col-xs-12 text-center">
-        <transition appear enter-active-class="animated fadeInDown">
-          <img class="jumbotronLogo text-center" src="~/assets/logo.png" alt="Ebenezer Websites logo">
-        </transition>
-      </q-jumbotron>
+  <q-page class="thin-black">
+    <div class="desktop-only">
+      <div class="row justify-center" id="logo">
+        <q-jumbotron class="col-xs-12 text-center">
+          <transition appear enter-active-class="animated fadeInDown">
+            <img class="jumbotronLogo text-center" src="~/assets/Small-gold.png" alt="Ebenezer Websites logo">
+          </transition>
+        </q-jumbotron>
+      </div>
+      <div id="work" class="pageLength">
+        <Work></Work>
+      </div>
+      <div id="about" class="pageLength">
+        <About></About>
+      </div>
+      <div id="contact" class="pageLength">
+        <Contact></Contact>
+      </div>
     </div>
-    <div class="row justify-center mobile-only mobile">
-      <q-jumbotron class="col-xs-12 text-center margin-top">
-        <transition appear enter-active-class="animated fadeInDown">
-          <img class="jumbotronLogoMobile text-center" src="~/assets/Small-gold.png" alt="Ebenezer Websites logo">
-        </transition>
-      </q-jumbotron>
+    <div class="mobile-only">
+      <div class="row justify-center mobile" id="logo">
+        <q-jumbotron class="col-xs-12 text-center margin-top">
+          <transition appear enter-active-class="animated fadeInDown">
+            <img class="jumbotronLogoMobile text-center" src="~/assets/Small-gold.png" alt="Ebenezer Websites logo">
+          </transition>
+        </q-jumbotron>
+      </div>
+      <div id="work" class="">
+        <Work></Work>
+      </div>
+      <div id="about" class="">
+        <About></About>
+      </div>
+      <div id="contact" class="">
+        <Contact></Contact>
+      </div>
     </div>
   </q-page>
 </template>
@@ -21,6 +43,9 @@
 <script>
   import { openURL } from "quasar";
   import { Notify } from 'quasar';
+  import About from './About'
+  import Contact from './Contact'
+  import Work from './Work'
   export default {
     name: "Home",
     data() {
@@ -34,17 +59,26 @@
     mounted() { },
     methods: {
       openURL,
+    },
+    components: {
+      About,
+      Contact,
+      Work
     }
   };
 </script>
 
 <style scoped>
+  .pageLength {
+    margin: 30rem 0 0 0;
+  }
+
   .mobile {
-    height: 90vh;
+    height: 100vh;
   }
 
   .margin-top {
-    margin-top: 5rem;
+    margin-top: 7rem;
   }
 
   .q-jumbotron {

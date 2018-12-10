@@ -62,7 +62,10 @@ module.exports = function (ctx) {
         "QLayoutFooter",
 
       ],
-      directives: ["Ripple"],
+      directives: [
+        "Ripple",
+        "ScrollFire"
+      ],
       // Quasar plugins
       plugins: ["Notify"]
       // iconSet: ctx.theme.mat ? 'material-icons' : 'ionicons'

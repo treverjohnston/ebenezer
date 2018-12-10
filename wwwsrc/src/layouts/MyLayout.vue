@@ -2,15 +2,27 @@
   <q-layout view="lHh Lpr fff" class="">
     <div class="desktop-only background">
 
-      <q-layout-header flat class="row justify-center white">
+      <q-layout-header v-if="home" flat class="row justify-center white thin-black">
         <q-toolbar color="transparent">
-          <q-btn @click="$router.push('/')" flat class="tab">
-            <img class=" mini-logo" src="../statics/ee.png" alt="Ebenenezer logo small"></img>
-          </q-btn>
+          <a href="#logo" flat class="tab">
+            <img class=" mini-logo" src="../statics/white-ee.png" alt="Ebenenezer logo small"></img>
+          </a>
           <span class="col-xs-1 col-md-8"></span>
-          <a class="col-xs-3 col-md-1 tab" href="/#/about">About Us</a>
-          <a class="col-xs-3 col-md-1 tab" href="/#/work">Our Work</a>
-          <a class="col-xs-3 col-md-1 tab" href="/#/contact">Contact Us</a>
+          <a class="col-xs-3 col-md-1 tab" href="#work">Our Work</a>
+          <a class="col-xs-3 col-md-1 tab" href="#about">About Us</a>
+          <a class="col-xs-3 col-md-1 tab" href="#contact">Contact Us</a>
+        </q-toolbar>
+      </q-layout-header>
+      <!-- This else is to keep a thin black background on main page only -->
+      <q-layout-header v-else flat class="row justify-center white">
+        <q-toolbar color="transparent">
+          <a href="#logo" flat class="tab">
+            <img class=" mini-logo" src="../statics/white-ee.png" alt="Ebenenezer logo small"></img>
+          </a>
+          <span class="col-xs-1 col-md-8"></span>
+          <a class="col-xs-3 col-md-1 tab" href="#work">Our Work</a>
+          <a class="col-xs-3 col-md-1 tab" href="#about">About Us</a>
+          <a class="col-xs-3 col-md-1 tab" href="#contact">Contact Us</a>
         </q-toolbar>
       </q-layout-header>
 
@@ -30,18 +42,18 @@
         </q-toolbar>
       </q-layout-footer>
     </div>
+    <!-- MOBILE -->
     <div class="mobile-only black-background">
-
       <q-layout-header flat class="row justify-center white">
-        <q-toolbar color="transparent">
-          <q-btn @click="$router.push('/')" flat class="tab">
+        <!-- <q-toolbar color="transparent">
+          <a href="#logo" flat class="tab">
             <img class=" mini-logo" src="../statics/white-ee.png" alt="Ebenenezer logo small"></img>
-          </q-btn>
+          </a>
           <span class="col-xs-1 col-md-8"></span>
-          <a class="col-xs-3 col-md-1 tab" href="/#/about">About Us</a>
-          <a class="col-xs-3 col-md-1 tab" href="/#/work">Our Work</a>
-          <a class="col-xs-3 col-md-1 tab" href="/#/contact">Contact Us</a>
-        </q-toolbar>
+          <a class="col-xs-3 col-md-1 tab" href="#work">Our Work</a>
+          <a class="col-xs-3 col-md-1 tab" href="#about">About Us</a>
+          <a class="col-xs-3 col-md-1 tab" href="#contact">Contact Us</a>
+        </q-toolbar> -->
       </q-layout-header>
 
 
@@ -109,6 +121,18 @@
 </script>
 
 <style>
+  .hidden {
+    display: none;
+  }
+
+  .visible {
+    display: block;
+  }
+
+  .thin-black {
+    background-color: rgba(0, 0, 0, 0.411);
+  }
+
   .black-background {
     background-color: black;
   }
