@@ -32,11 +32,14 @@
           <q-icon id="arrow" class="animate-bounce white" size="3rem" name="arrow_downward" />
         </transition>
       </div>
-      <div id="about" class="light-background" v-scroll-fire="removeArrow">
-        <About></About>
+      <div id="ideals" class="pageLength">
+        <Ideals></Ideals>
       </div>
       <div id="work" class="" v-scroll-fire="removeArrow">
         <Work></Work>
+      </div>
+      <div id="about" class="light-background" v-scroll-fire="removeArrow">
+        <About></About>
       </div>
       <div id="contact" class="">
         <Contact></Contact>
