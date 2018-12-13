@@ -108,6 +108,14 @@
 </script>
 
 <style>
+  .lightish-background {
+    background-color: rgba(255, 255, 255, 0.199);
+  }
+
+  .light-background {
+    background-color: white;
+  }
+
   .hidden {
     display: none;
   }

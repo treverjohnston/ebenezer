@@ -8,6 +8,9 @@
           </transition>
         </q-jumbotron>
       </div>
+      <div id="ideals" class="pageLength">
+        <Ideals></Ideals>
+      </div>
       <div id="work" class="pageLength">
         <Work></Work>
       </div>
@@ -25,12 +28,15 @@
             <img class="jumbotronLogoMobile text-center" src="~/assets/Small-gold.png" alt="Ebenezer Websites logo">
           </transition>
         </q-jumbotron>
+        <transition appear enter-active-class="animated fadeInDown" v-scroll-fire="removeArrow">
+          <q-icon id="arrow" class="animate-bounce white" size="3rem" name="arrow_downward" />
+        </transition>
       </div>
-      <div id="work" class="">
-        <Work></Work>
-      </div>
-      <div id="about" class="">
+      <div id="about" class="light-background" v-scroll-fire="removeArrow">
         <About></About>
+      </div>
+      <div id="work" class="" v-scroll-fire="removeArrow">
+        <Work></Work>
       </div>
       <div id="contact" class="">
         <Contact></Contact>
@@ -46,6 +52,7 @@
   import About from './About'
   import Contact from './Contact'
   import Work from './Work'
+  import Ideals from './Ideals'
   export default {
     name: "Home",
     data() {
@@ -59,11 +66,16 @@
     mounted() { },
     methods: {
       openURL,
+      removeArrow() {
+        var element = document.getElementById('arrow')
+        element.remove();
+      }
     },
     components: {
       About,
       Contact,
-      Work
+      Work,
+      Ideals
     }
   };
 </script>

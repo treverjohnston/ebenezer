@@ -1,14 +1,14 @@
 <template>
     <q-page class="row justify-center">
-        <div class="col-xs-10 second-background">
+        <div class=" col-xs-10">
             <div class="row justify-center">
                 <div class="col-xs-12 col-md-11 q-mb-xl">
                     <div class="q-display-3 white">Our Work</div>
                     <hr class="q-my-lg white-hr" align="left">
                     <transition-group appear enter-active-class="animated fadeInDown">
-                        <q-card flat class="q-ma-sm card shadow-12 grow text-center" v-for="(item, index) in projects"
+                        <q-card flat class="q-ma-sm card shadow-24 grow text-center" v-for="(item, index) in projects"
                             :key="index">
-                            <div @click="openURL(item.url)">
+                            <div @click="openURL(item.url)" class="text-center">
                                 <div class="container text-center desktop-only">
                                     <img :src="item.img" :alt="item.title" class="image text-center desktop-only">
                                     <h3 class="middle text text-weight-light white desktop-only">{{item.title}}</h3>
@@ -66,7 +66,7 @@
         opacity: 1;
         transition: 0.5s ease;
         backface-visibility: hidden;
-        width: 75vw;
+        width: 70vw;
     }
 
     .middle {

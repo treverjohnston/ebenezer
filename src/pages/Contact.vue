@@ -1,6 +1,6 @@
 <template>
     <q-page class="row justify-center">
-        <div class="col-xs-10 second-background">
+        <div class="col-xs-10 ">
             <div class="row justify-center">
                 <div class="col-xs-11 q-mb-xl">
                     <div class="q-display-3 white">Contact Us</div>
