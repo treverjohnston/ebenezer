@@ -20,17 +20,8 @@
                                         Owner
                                     </div>
                                     <div class="col-xs-12 q-subheading white q-mt-lg q-mb-xl">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sunt
-                                        tempora
-                                        beatae
-                                        maxime
-                                        magni nisi
-                                        repudiandae unde maiores possimus minus voluptatibus amet ut dicta
-                                        consequatur
-                                        et
-                                        repellat,
-                                        omnis
-                                        asperiores hic?
+                                        Trever is a cool guy. He likes things, and also stuff. If you would like to get
+                                        to know him, he would like to get to know you too.
                                     </div>
                                 </div>
                             </div>

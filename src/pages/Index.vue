@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="mobile-only">
-      <div class="row justify-center mobile" id="logo">
+      <div class="row justify-center mobile" id="mobileLogo">
         <q-jumbotron class="col-xs-12 text-center margin-top">
           <transition appear enter-active-class="animated fadeInDown">
             <img class="jumbotronLogoMobile text-center" src="~/assets/Small-gold.png" alt="Ebenezer Websites logo">
@@ -32,16 +32,16 @@
           <q-icon id="arrow" class="animate-bounce white" size="3rem" name="arrow_downward" />
         </transition>
       </div>
-      <div id="ideals" class="pageLength">
+      <div id="mobileIdeals" class="pageLength">
         <Ideals></Ideals>
       </div>
-      <div id="work" class="" v-scroll-fire="removeArrow">
+      <div id="mobileWork" class="" v-scroll-fire="removeArrow">
         <Work></Work>
       </div>
-      <div id="about" class="light-background" v-scroll-fire="removeArrow">
+      <div id="mobileAbout" class="light-background" v-scroll-fire="removeArrow">
         <About></About>
       </div>
-      <div id="contact" class="">
+      <div id="mobileContact" class="">
         <Contact></Contact>
       </div>
     </div>
@@ -52,6 +52,7 @@
 <script>
   import { openURL } from "quasar";
   import { Notify } from 'quasar';
+  import { scroll } from 'quasar'
   import About from './About'
   import Contact from './Contact'
   import Work from './Work'
@@ -72,6 +73,22 @@
       removeArrow() {
         var element = document.getElementById('arrow')
         element.remove();
+      },
+      jump() {
+        console.log('Hello')
+        window.location.hash = "mobileWork";
+        var el = document.getElementById('mobileWork')
+
+        const { getScrollTarget, setScrollPosition } = scroll
+
+        let target = getScrollTarget(el)
+        let offset = el.offsetTop - el.scrollHeight
+        let duration = 1000
+        setScrollPosition(target, offset, duration)
+        // setScrollPosition(scrollTargetElement, offset[100, duration])
+        // document.getElementById('mobileWork').scrollIntoView({
+        //   behavior: 'smooth'
+        // });
       }
     },
     components: {
