@@ -1,12 +1,11 @@
 <template>
     <q-page class="row justify-center">
         <div class="col-xs-10 second-background">
-            <div class="row justify-around text-center">
-                <div v-for="ideal in ideals" class="col-xs-12 col-md-3 white">
-                    <q-icon :name="ideal.icon" size="10rem" class="q-mt-xl q-mb-lg" />
-                    <p class="
-                        text-bold">{{ideal.title}}</p>
-                    <p class="q-mt-xl text-justified">{{ideal.body}}</p>
+            <div class="row justify-around text-justified">
+                <div v-for="ideal in ideals" class="col-xs-12 col-sm-5 col-lg-3 white text-justified ">
+                    <img :src="ideal.icon" :alt="ideal.title" class="icon">
+                    <p class="text-bold">{{ideal.title}}</p>
+                    <p class="q-mt-md text-justified">{{ideal.body}}</p>
                 </div>
             </div>
         </div>
@@ -35,4 +34,7 @@
 </script>
 
 <style scoped>
+    .icon {
+        max-height: 17rem;
+    }
 </style>

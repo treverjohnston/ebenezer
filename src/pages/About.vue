@@ -20,8 +20,18 @@
                                         Owner
                                     </div>
                                     <div class="col-xs-12 q-subheading white q-mt-lg q-mb-xl">
-                                        Trever is a cool guy. He likes things, and also stuff. If you would like to get
-                                        to know him, he would like to get to know you too.
+                                        Trever was born and largely raised in Longmont, Colorado. However, he spent his
+                                        formative years, and currently resides,
+                                        in Boise, Idaho, with his wife where he pretends he is a native. He enjoys most
+                                        all things outdoors and has a passion
+                                        for baseball, retro-videogames (think the original Super Mario Bros.), and fun
+                                        board/card games. He has a strong
+                                        devotion to learning more and is constantly striving for greatness at
+                                        everything he does, especially when building your
+                                        website. Trever is more than willing to go the extra mile to ensure that your
+                                        product is everything you want it to be
+                                        and more. If you have any questions, or just want to talk, Trever is always
+                                        ready for a good conversation!
                                     </div>
                                 </div>
                             </div>
