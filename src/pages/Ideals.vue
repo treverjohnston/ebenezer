@@ -1,13 +1,15 @@
 <template>
     <q-page class="row justify-center">
         <div class="col-xs-10 second-background">
-            <div class="row justify-around text-justified">
-                <div v-for="ideal in ideals" class="col-xs-12 col-sm-5 col-lg-3 white text-justified ">
-                    <img :src="ideal.icon" :alt="ideal.title" class="icon">
-                    <p class="text-bold">{{ideal.title}}</p>
-                    <p class="q-mt-md text-justified">{{ideal.body}}</p>
+            <transition appear enter-active-class="animated fadeInDown">
+                <div class="row justify-around text-justified">
+                    <div v-for="ideal in ideals" class="col-xs-12 col-sm-5 col-lg-3 white text-justified ">
+                        <img :src="ideal.icon" :alt="ideal.title" class="icon">
+                        <p class="text-bold">{{ideal.title}}</p>
+                        <p class="q-mt-md text-justified">{{ideal.body}}</p>
+                    </div>
                 </div>
-            </div>
+            </transition>
         </div>
     </q-page>
 </template>
