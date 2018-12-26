@@ -8,17 +8,17 @@ export default {
     {
       title: "Responsive Design - Cross Platform",
       body: "We make websites that look great no matter the platform.  If you have a separate mobile and desktop site (ew), or your website doesn't look good on all screens, we'll help you out.",
-      icon: "../assets/responsive.png"
+      icon: "assets/responsive.png"
     },
     {
       title: "Modern Look and Feel",
       body: "If your website looks like it's caught in the 90's (or 2010's) we'll bring it up to snuff.",
-      icon: "../assets/modern.png"
+      icon: "assets/modern.png"
     },
     {
       title: "Small Workload - Large Dedication",
       body: "We are purposefully selective about the amount of projects we take on at a time. This ensures that we can dedicate as much time as needed on your project to make it better than you ever hoped for.",
-      icon: "../assets/focus.png"
+      icon: "assets/focus.png"
     }
   ],
   projects: [
