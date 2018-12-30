@@ -1,5 +1,6 @@
 <template>
   <q-page class="thin-black">
+    <h1 class="hidden">Ebenezer Websites LLC</h1>
     <div class="desktop-only">
       <div class="row justify-center" id="logo">
         <q-jumbotron class="col-xs-12 text-center">

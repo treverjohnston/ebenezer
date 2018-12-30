@@ -16,6 +16,11 @@ export default {
       icon: "statics/modern.png"
     },
     {
+      title: "Upgrade From Social Media",
+      body: "Is your company's \"website\" on social media? It's probably time for an upgrade.  Ebenezer Websites LLC prides itself on turning social media \"websites\" into legitimate websites that you, and your client-base, will love.",
+      icon: "statics/up.png"
+    },
+    {
       title: "Small Workload - Large Dedication",
       body: "We are purposefully selective about the amount of projects we take on at a time. This ensures that we can dedicate as much time as needed on your project to make it better than you ever hoped for.",
       icon: "statics/focus.png"

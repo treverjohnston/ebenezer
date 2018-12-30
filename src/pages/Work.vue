@@ -3,7 +3,7 @@
         <div class=" col-xs-10">
             <div class="row justify-center">
                 <div class="col-xs-12 col-md-11 q-mb-xl">
-                    <div class="q-display-3 white">Our Work</div>
+                    <div class="q-display-3 white">Our Latest Work</div>
                     <hr class="q-my-lg white-hr" align="left">
                     <transition-group appear enter-active-class="animated fadeInDown">
                         <q-card flat class="q-ma-sm card shadow-24 grow text-center" v-for="(item, index) in projects"
