@@ -95,7 +95,8 @@
         }
       },
       year() {
-        return new Date().getFullYear;
+        var y = new Date;
+        return y.getFullYear();
       }
     },
     methods: {
