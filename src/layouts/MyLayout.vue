@@ -21,7 +21,7 @@
       <q-layout-footer reveal>
         <q-toolbar>
           <q-toolbar-title>
-            &copy;2018 Ebenezer Websites LLC
+            &copy;{{year}} Ebenezer Websites LLC
           </q-toolbar-title>
           <small class="q-mr-lg">Boise, ID</small>
           <small class="q-mr-lg">(303)-827-1510</small>
@@ -60,7 +60,7 @@
             </div>
             <div class="col-xs-12 q-mt-xs">
 
-              &copy;2018 Ebenezer Websites LLC
+              &copy;{{year}} Ebenezer Websites LLC
             </div>
           </q-toolbar-title>
         </q-toolbar>
@@ -93,6 +93,9 @@
         } else {
           return false;
         }
+      },
+      year() {
+        return new Date().getFullYear;
       }
     },
     methods: {
