@@ -7,7 +7,7 @@ export default {
   ideals: [
     {
       title: "Responsive Design - Cross Platform",
-      body: "We make websites that look great no matter the platform.  If you have a separate mobile and desktop site (ew), or your website doesn't look good on all screens, we'll help you out.",
+      body: "We make websites that look great no matter the platform.  If you have a separate mobile and desktop site, no mobile site at all, or your website just doesn't look good on all screens, we'll help you out.",
       icon: "statics/responsive.png"
     },
     {
@@ -16,8 +16,8 @@ export default {
       icon: "statics/modern.png"
     },
     {
-      title: "Upgrade From Social Media",
-      body: "Is your company's \"website\" on social media? It's probably time for an upgrade.  Ebenezer Websites LLC prides itself on turning social media \"websites\" into legitimate websites that you, and your client-base, will love.",
+      title: "Upgrade From Social Media, WordPress, or online Website Builders",
+      body: "Is your company's \"website\" on social media, or built using a tool like WordPress or Wix? It's probably time for an upgrade.  Ebenezer Websites LLC prides itself on turning these startup websites into legitimate sites that you, and your client-base, will be constantly impressed by.",
       icon: "statics/up.png"
     },
     {
@@ -33,15 +33,17 @@ export default {
         "//res.cloudinary.com/treverscloud/image/upload/v1542827870/ebenezer/rfh.png",
       imgMob:
         "//res.cloudinary.com/treverscloud/image/upload/v1544409839/ebenezer/rfhmob.png",
-      title: "Ride For Hope Idaho"
+      title: "Ride For Hope Idaho",
+      description: "Ebenezer Websites LLC revamped, and has been maintaining, the website for Ride For Hope Idaho since the beginning of 2018.  Since taking over maintaining and updating the website, this great charity ride has seen a dramatic increase in the amount of riders signing up every year.  This local Idaho charity bike ride has been helping the underserved get the healthcare they need since 2014. If you are looking for a bike ride near Boise, or simply want to donate to a great cause, be sure to check it out."
     },
-    {
-      url: "//www.unorthodoxgifts.com",
-      img:
-        "//res.cloudinary.com/treverscloud/image/upload/v1542827874/ebenezer/ug.png",
-      imgMob:
-        "//res.cloudinary.com/treverscloud/image/upload/v1544409839/ebenezer/ugmob.png",
-      title: "Unorthodox Gifts"
-    }
+    // {
+    //   url: "//www.unorthodoxgifts.com",
+    //   img:
+    //     "//res.cloudinary.com/treverscloud/image/upload/v1542827874/ebenezer/ug.png",
+    //   imgMob:
+    //     "//res.cloudinary.com/treverscloud/image/upload/v1544409839/ebenezer/ugmob.png",
+    //   title: "Unorthodox Gifts",
+    //   description: "Ebenezer Websites LLC created this site for two reasons. One was to show "
+    // }
   ]
 };

@@ -11,10 +11,20 @@
                             <div @click="openURL(item.url)" class="text-center">
                                 <div class="container text-center desktop-only">
                                     <img :src="item.img" :alt="item.title" class="image text-center desktop-only">
-                                    <h3 class="middle text text-weight-light white desktop-only">{{item.title}}</h3>
+                                    <div class="middle">
+                                        <h3 class="text text-weight-light white desktop-only">{{item.title}}</h3>
+                                        <h6 class="text text-weight-light white desktop-only">{{item.description}}
+                                        </h6>
+                                        <q-btn no-caps class="white">Take me to the site!</q-btn>
+                                    </div>
                                 </div>
                                 <div class="text-center mobile-only">
-                                    <img :src="item.imgMob" :alt="item.title" class="mobile-image text-center mobile-only">
+                                    <img :src="item.imgMob" :alt="item.title"
+                                        class="mobile-image text-center mobile-only">
+                                    <h6 class="text text-weight-light white mobile-only">
+                                        {{item.description}}</h6>
+                                    <q-btn no-caps outline class="btn">Take me to the site!</q-btn>
+
                                 </div>
                             </div>
                         </q-card>
@@ -47,8 +57,14 @@
 </script>
 
 <style scoped>
+    .btn {
+        color: white;
+        /* background-color: black; */
+    }
+
     .container:hover .image {
-        opacity: 0.2;
+        opacity: 0;
+        /* background-color: black; */
     }
 
     .container:hover .middle {
