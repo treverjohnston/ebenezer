@@ -82,9 +82,9 @@ module.exports = function (ctx) {
       // workboxPluginMode: 'InjectManifest',
       // workboxOptions: {},
       manifest: {
-        // name: 'Quasar App',
-        // short_name: 'Quasar-PWA',
-        // description: 'Best PWA App in town!',
+        name: 'Ebenezer Websites LLC',
+        short_name: 'Ebenezer Websites LLC',
+        description: 'Ebenezer Websites LLC is a company homegrown in Boise, Idaho, USA. If you have any website needs--from an upgrade, to a brand new site--we are happy to help!',
         display: "standalone",
         orientation: "portrait",
         background_color: "#ffffff",
