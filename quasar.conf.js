@@ -81,42 +81,42 @@ module.exports = function (ctx) {
     pwa: {
       // workboxPluginMode: 'InjectManifest',
       // workboxOptions: {},
-      manifest: {
-        name: 'Ebenezer Websites LLC',
-        short_name: 'Ebenezer Websites LLC',
-        description: 'Ebenezer Websites LLC is a company homegrown in Boise, Idaho, USA. If you have any website needs--from an upgrade, to a brand new site--we are happy to help!',
-        display: "standalone",
-        orientation: "portrait",
-        background_color: "#ffffff",
-        theme_color: "#027be3",
-        icons: [
-          {
-            src: "statics/icons/icon-128x128.png",
-            sizes: "128x128",
-            type: "image/png"
-          },
-          {
-            src: "statics/icons/icon-192x192.png",
-            sizes: "192x192",
-            type: "image/png"
-          },
-          {
-            src: "statics/icons/icon-256x256.png",
-            sizes: "256x256",
-            type: "image/png"
-          },
-          {
-            src: "statics/icons/icon-384x384.png",
-            sizes: "384x384",
-            type: "image/png"
-          },
-          {
-            src: "statics/icons/icon-512x512.png",
-            sizes: "512x512",
-            type: "image/png"
-          }
-        ]
-      }
+      // manifest: {
+      //   name: 'Ebenezer Websites LLC',
+      //   short_name: 'Ebenezer Websites LLC',
+      //   description: 'Ebenezer Websites LLC is a company homegrown in Boise, Idaho. If you have any website needs--from an upgrade, to a brand new site--we are happy to help!',
+      //   display: "standalone",
+      //   orientation: "portrait",
+      //   background_color: "#ffffff",
+      //   theme_color: "#027be3",
+      //   icons: [
+      //     {
+      //       src: "statics/icons/ee.png",
+      //       sizes: "128x128",
+      //       type: "image/png"
+      //     },
+      //     {
+      //       src: "statics/icons/ee.png",
+      //       sizes: "192x192",
+      //       type: "image/png"
+      //     },
+      //     {
+      //       src: "statics/icons/ee.png",
+      //       sizes: "256x256",
+      //       type: "image/png"
+      //     },
+      //     {
+      //       src: "statics/icons/ee.png",
+      //       sizes: "384x384",
+      //       type: "image/png"
+      //     },
+      //     {
+      //       src: "statics/icons/ee.png",
+      //       sizes: "512x512",
+      //       type: "image/png"
+      //     }
+      //   ]
+      // }
     },
     cordova: {
       // id: 'org.cordova.quasar.app'
