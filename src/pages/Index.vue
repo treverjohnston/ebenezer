@@ -3,7 +3,17 @@
     <h1 class="hidden">Ebenezer Websites LLC</h1>
     <div class="desktop-only">
       <div class="row justify-center" id="logo">
-        <q-jumbotron class="col-xs-12 text-center">
+        <q-jumbotron class="col-xs-12 text-center" v-anime="{ 
+  translateY: {
+    value:    ['20px', '0px'],
+    duration: 4000,
+    easing: 'easeOutBounce',
+  },
+  translateY: {
+    value:    ['0px', '20px'],
+    duration: 4000,
+  } 
+   }">
           <transition appear enter-active-class="animated fadeInDown">
             <img class="jumbotronLogo text-center" src="~/assets/Small-gold.png" alt="Ebenezer Websites logo">
           </transition>

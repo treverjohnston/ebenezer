@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import VueAnime from 'vue-animejs';
 
 import tabs from './tabs'
 import auth from './auth'
 import items from './items'
 
 Vue.use(Vuex)
+Vue.use(VueAnime)
 
 /*
  * If not building with SSR mode, you can
