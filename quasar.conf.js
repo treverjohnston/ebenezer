@@ -3,7 +3,7 @@
 module.exports = function (ctx) {
   return {
     // app plugins (/src/plugins)
-    plugins: ["axios"],
+    plugins: ["axios", "gtm-plugin"],
     css: ["app.styl"],
     extras: [
       ctx.theme.mat ? "roboto-font" : null,
@@ -67,7 +67,9 @@ module.exports = function (ctx) {
         "ScrollFire"
       ],
       // Quasar plugins
-      plugins: ["Notify"]
+      plugins: [
+        "Notify"
+      ]
       // iconSet: ctx.theme.mat ? 'material-icons' : 'ionicons'
       // i18n: 'de' // Quasar language
     },

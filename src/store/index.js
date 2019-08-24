@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import VueAnime from 'vue-animejs';
+import VueAnime from 'vue-animejs'
 
 import tabs from './tabs'
 import auth from './auth'
