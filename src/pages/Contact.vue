@@ -13,16 +13,14 @@
                             <q-input v-model="subject" float-label="Subject" name="" type="text" />
                             <q-input v-model="message" type="textarea" name="" float-label="Message" :max-height="100"
                                 rows="5" />
-                            <form action="//formspree.io/trever@ebenezerwebsites.com" method="POST">
-                                <q-btn type="submit" outline color="white" class="q-mt-sm">Send</q-btn>
-                                <div class="hidden">
-                                    <input type="text" name="name" v-model="name">
-                                    <input type="email" name="_replyto" v-model="email">
-                                    <input type="tel" name="phone" v-model="phone">
-                                    <input type="text" name="subject" v-model="subject">
-                                    <input type="textarea" name="message" v-model="message">
-                                </div>
-                            </form>
+                            <q-btn @click="sendEmail" outline color="white" class="q-mt-sm">Send</q-btn>
+                            <div class="hidden">
+                                <input type="text" name="name" v-model="name">
+                                <input type="email" name="_replyto" v-model="email">
+                                <input type="tel" name="phone" v-model="phone">
+                                <input type="text" name="subject" v-model="subject">
+                                <input type="textarea" name="message" v-model="message">
+                            </div>
                         </div>
                     </transition>
                 </div>
@@ -49,7 +47,17 @@
         mounted() {
         },
         methods: {
-            openURL
+            openURL,
+            sendEmail() {
+                var emailContent = {
+                    name: this.name,
+                    email: this.email,
+                    phone: this.phone,
+                    subject: this.subject,
+                    message: this.message
+                }
+                this.$store.dispatch('email/sendEmail', emailContent)
+            }
         }
     }
 </script>
