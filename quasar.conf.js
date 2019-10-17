@@ -3,7 +3,7 @@
 module.exports = function (ctx) {
   return {
     // app plugins (/src/plugins)
-    plugins: ["axios", "gtm-plugin"],
+    plugins: ["axios", "gtm-plugin", "analytics"],
     css: ["app.styl"],
     extras: [
       ctx.theme.mat ? "roboto-font" : null,

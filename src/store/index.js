@@ -9,13 +9,7 @@ import email from './email'
 
 Vue.use(Vuex)
 Vue.use(VueAnime)
-import VueAnalytics from 'vue-analytics';
 
-vue.use(VueAnalytics, {
-  id: 'UA-120904325-1',
-  checkDuplicatedScript: true,
-  router
-});
 /*
  * If not building with SSR mode, you can
  * directly export the Store instantiation
