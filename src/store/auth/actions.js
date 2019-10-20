@@ -1,5 +1,6 @@
 import swal from 'sweetalert';
 import axios from 'axios'
+import { Notify } from 'quasar'
 
 var production = !window.location.host.includes('localhost');
 var baseUrl = production ? '//unorthodoxgifts.com/' : '//localhost:3000/';
