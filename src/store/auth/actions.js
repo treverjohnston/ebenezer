@@ -12,14 +12,13 @@ let auth_api = axios.create({
 })
 
 export function sendEmail({ commit, dispatch }, obj) {
-    console.log('emailobj', obj);
-    // auth_api.post('email', obj)
-    //     .then(res => {
-    //         Notify.create({ message: 'Message Sent', color: 'positive' });
-    //     })
-    //     .catch(err => {
-    //         Notify.create({ message: 'Message Failed to Send: \n' + err, color: 'negative' });
-    //     })
+    auth_api.post('email', obj)
+        .then(res => {
+            Notify.create({ message: 'Message Sent', color: 'positive' });
+        })
+        .catch(err => {
+            Notify.create({ message: 'Message Failed to Send: \n' + err, color: 'negative' });
+        })
 }
 
 export function getAuth({ commit, dispatch }) {
