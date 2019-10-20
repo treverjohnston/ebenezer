@@ -54,7 +54,8 @@
                     email: this.email,
                     phone: this.phone,
                     subject: this.subject,
-                    message: this.message
+                    message: this.message,
+                    from: 'ebenezer'
                 }
                 this.$store.dispatch('auth/sendEmail', emailContent)
             }

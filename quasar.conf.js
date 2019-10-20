@@ -15,6 +15,7 @@ module.exports = function (ctx) {
     supportIE: true,
     build: {
       scopeHoisting: true,
+      distDir: 'docs/docs',
       // vueRouterMode: 'history',
       // vueCompiler: true,
       // gzip: true,
