@@ -5,7 +5,6 @@ import VueAnime from 'vue-animejs'
 import tabs from './tabs'
 import auth from './auth'
 import items from './items'
-import email from './email'
 
 Vue.use(Vuex)
 Vue.use(VueAnime)
@@ -20,8 +19,7 @@ export default function (/* { ssrContext } */) {
     modules: {
       tabs,
       auth,
-      items,
-      email
+      items
     }
   })
 

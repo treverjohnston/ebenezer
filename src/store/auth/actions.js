@@ -3,7 +3,7 @@ import axios from 'axios'
 import { Notify } from 'quasar'
 
 var production = !window.location.host.includes('localhost');
-var baseUrl = production ? '//unorthodoxgifts.com/' : '//localhost:3000/';
+var baseUrl = production ? '//www.unorthodoxgifts.com/' : '//localhost:3000/';
 
 let auth_api = axios.create({
     baseURL: baseUrl,
@@ -20,7 +20,6 @@ export function sendEmail({ commit, dispatch }, obj) {
             Notify.create({ message: 'Message Failed to Send: \n' + err, color: 'negative' });
         })
 }
-
 
 export function getAuth({ commit, dispatch }) {
     auth_api('authenticate')
