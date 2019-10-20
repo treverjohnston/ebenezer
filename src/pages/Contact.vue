@@ -56,7 +56,7 @@
                     subject: this.subject,
                     message: this.message
                 }
-                this.$store.dispatch('email/sendEmail', emailContent)
+                this.$store.dispatch('auth/sendEmail', emailContent)
             }
         }
     }

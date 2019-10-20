@@ -2,13 +2,24 @@ import swal from 'sweetalert';
 import axios from 'axios'
 
 var production = !window.location.host.includes('localhost');
-var baseUrl = production ? '//quick-gifter.herokuapp.com/' : '//localhost:3000/';
+var baseUrl = production ? '//unorthodoxgifts.com/' : '//localhost:3000/';
 
 let auth_api = axios.create({
     baseURL: baseUrl,
     timeout: 4000,
     withCredentials: true
 })
+
+export function sendEmail({ commit, dispatch }, obj) {
+    auth_api.post('email', obj)
+        .then(res => {
+            Notify.create({ message: 'Message Sent', color: 'positive' });
+        })
+        .catch(err => {
+            Notify.create({ message: 'Message Failed to Send: \n' + err, color: 'negative' });
+        })
+}
+
 
 export function getAuth({ commit, dispatch }) {
     auth_api('authenticate')
@@ -61,26 +72,26 @@ export function createAccount({ commit, dispatch }, obj) {
                     timer: 2000
                 })
                     .then(
-                    function () { },
-                    // handling the promise rejection
-                    function (dismiss) {
-                        if (dismiss === 'timer') {
-                            console.log('I was closed by the timer')
-                        }
-                    })
+                        function () { },
+                        // handling the promise rejection
+                        function (dismiss) {
+                            if (dismiss === 'timer') {
+                                console.log('I was closed by the timer')
+                            }
+                        })
                     .catch(err => {
                         swal({
                             title: err,
                             timer: 2000
                         })
                             .then(
-                            function () { },
-                            // handling the promise rejection
-                            function (dismiss) {
-                                if (dismiss === 'timer') {
-                                    console.log('I was closed by the timer')
-                                }
-                            })
+                                function () { },
+                                // handling the promise rejection
+                                function (dismiss) {
+                                    if (dismiss === 'timer') {
+                                        console.log('I was closed by the timer')
+                                    }
+                                })
                     })
             }
             else {
@@ -121,7 +132,7 @@ export function logout({ commit, dispatch }) {
             commit('setLoginStatus', false)
             swal({
                 title: res.data.message,
-               timer: 2000
+                timer: 2000
             }).then(
                 function () {
                 },
