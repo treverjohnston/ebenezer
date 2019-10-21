@@ -32,7 +32,7 @@ export default {
       img: "../statics/harvard.png",
       imgMob: "../statics/harvard_mobile.png",
       title: "Harvard Print and Copy Center",
-      description: "When Harvard Print and Copy Center recently expanded their business to Boise, Idaho they were in need of a modernized website that would reflect this. Ebenezer Websites LLC took up the task and has been maintaining the site ever since."
+      description: "When Harvard Print and Copy Center recently expanded their business to Boise, Idaho they were in need of a modernized website that would reflect this. Ebenezer Websites LLC took up the task and has been maintaining the site since!"
     },
     {
       url: "//www.rideforhopeidaho.com",
