@@ -28,6 +28,13 @@ export default {
   ],
   projects: [
     {
+      url: "//www.harvardcopy.com",
+      img: "../statics/harvard.png",
+      imgMob: "../statics/harvard_mobile.png",
+      title: "Harvard Print and Copy Center",
+      description: "When Harvard Print and Copy Center recently expanded their business to Boise, Idaho they were in need of a modernized website that would reflect this. Ebenezer Websites LLC took up the task and has been maintaining the site ever since."
+    },
+    {
       url: "//www.rideforhopeidaho.com",
       img:
         "//res.cloudinary.com/treverscloud/image/upload/v1542827870/ebenezer/rfh.png",

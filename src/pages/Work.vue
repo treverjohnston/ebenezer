@@ -10,12 +10,13 @@
                             :key="index">
                             <div @click="openURL(item.url)" class="text-center">
                                 <div class="container text-center desktop-only">
-                                    <img :src="item.img" :alt="item.title" class="image text-center desktop-only">
+                                    <img :src="item.img" :alt="item.title" @click="openURL(item.url)"
+                                        class="image text-center desktop-only">
                                     <div class="middle">
                                         <h3 class="text text-weight-light white desktop-only">{{item.title}}</h3>
                                         <h6 class="text text-weight-light white desktop-only">{{item.description}}
                                         </h6>
-                                        <q-btn no-caps class="white">Take me to the site!</q-btn>
+                                        <q-btn no-caps outline class="white">Take me to the site!</q-btn>
                                     </div>
                                 </div>
                                 <div class="text-center mobile-only">
@@ -64,11 +65,12 @@
 
     .container:hover .image {
         opacity: 0;
-        /* background-color: black; */
     }
 
     .container:hover .middle {
         opacity: 1;
+        background-color: rgba(0, 0, 0, 0.603);
+        padding: 1rem;
     }
 
     .image {
