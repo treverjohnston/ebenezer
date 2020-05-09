@@ -9,8 +9,9 @@
           </a>
           <span class="col-xs-1 col-md-8"></span>
           <a class="col-xs-3 col-md-1 tab" href="#work">Our Latest</a>
-          <a class="col-xs-3 col-md-1 tab" href="#about">About Us</a>
-          <a class="col-xs-3 col-md-1 tab" href="#contact">Contact Us</a>
+          <a class="col-xs-2 col-md-1 tab" href="#about">About Us</a>
+          <a class="col-xs-2 col-md-1 tab" href="#contact">Contact Us</a>
+          <a class="col-xs-2 col-md-1 tab" href="https://www.unorthodoxtech.com" target="_blank">Blog</a>
         </q-toolbar>
       </q-layout-header>
 

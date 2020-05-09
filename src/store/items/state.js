@@ -43,14 +43,14 @@ export default {
       title: "Ride For Hope Idaho",
       description: "Ebenezer Websites LLC revamped, and has been maintaining, the website for Ride For Hope Idaho since the beginning of 2018.  Since taking over maintaining and updating the website, this great charity ride has seen a dramatic increase in the amount of riders signing up every year.  This local Idaho charity bike ride has been helping the underserved get the healthcare they need since 2014. If you are looking for a bike ride near Boise, or simply want to donate to a great cause, be sure to check it out."
     },
-    // {
-    //   url: "//www.unorthodoxgifts.com",
-    //   img:
-    //     "//res.cloudinary.com/treverscloud/image/upload/v1542827874/ebenezer/ug.png",
-    //   imgMob:
-    //     "//res.cloudinary.com/treverscloud/image/upload/v1544409839/ebenezer/ugmob.png",
-    //   title: "Unorthodox Gifts",
-    //   description: "Ebenezer Websites LLC created this site for two reasons. One was to show "
-    // }
+    {
+      url: "//www.unorthodoxtech.com",
+      img:
+        "//res.cloudinary.com/treverscloud/image/upload/v1589039997/ebenezer/tech.png",
+      imgMob:
+        "//res.cloudinary.com/treverscloud/image/upload/v1589039997/ebenezer/tech_mobile.png",
+      title: "Unorthodox Tech",
+      description: "This is the blog site for Ebenezer Websites LLC. If you're interested in some more technical discussion, or just getting to know how some of the technology works, be sure to check it out!"
+    }
   ]
 };
