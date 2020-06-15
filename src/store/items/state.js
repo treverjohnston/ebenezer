@@ -51,6 +51,15 @@ export default {
         "//res.cloudinary.com/treverscloud/image/upload/v1589039997/ebenezer/tech_mobile.png",
       title: "Unorthodox Tech",
       description: "This is the blog site for Ebenezer Websites LLC. If you're interested in some more technical discussion, or just getting to know how some of the technology works, be sure to check it out!"
+    },
+    {
+      url: "//landing.ebenezerwebsites.com/",
+      img:
+        "//res.cloudinary.com/treverscloud/image/upload/v1592180277/ebenezer/landing.png",
+      imgMob:
+        "//res.cloudinary.com/treverscloud/image/upload/v1592180277/ebenezer/landing_mobile.png",
+      title: "Example Landing Page",
+      description: "This is an example landing page showing some of what Ebenezer Websites LLC can create for your business. We specialize in single page websites that put the best foot forward for your business."
     }
   ]
 };
