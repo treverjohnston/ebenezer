@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import VueAnime from 'vue-animejs'
 
-import tabs from './tabs'
 import auth from './auth'
 import items from './items'
 
@@ -17,18 +16,10 @@ Vue.use(VueAnime)
 export default function (/* { ssrContext } */) {
   const Store = new Vuex.Store({
     modules: {
-      tabs,
       auth,
       items
     }
   })
-
-  if (process.env.DEV && module.hot) {
-    module.hot.accept(['./tabs'], () => {
-      const newShowcase = require('./tabs').default
-      store.hotUpdate({ modules: { showcase: newShowcase } })
-    })
-  }
 
   return Store
 }
