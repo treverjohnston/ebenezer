@@ -11,7 +11,7 @@ let auth_api = axios.create({
 })
 
 export function sendEmail({ commit, dispatch }, obj) {
-    auth_api.post('api/emails', obj)
+    auth_api.post('api/emails/sendgrid', obj)
         .then(res => {
             Notify.create({ message: 'Message Sent', color: 'positive' });
         })

@@ -9,6 +9,7 @@ const routes = [
       { path: '/about', component: () => import('pages/Index.vue') },
       { path: '/work', component: () => import('pages/Index.vue') },
       { path: '/contact', component: () => import('pages/Index.vue') },
+      { path: '/dunder-mifflin', component: () => import('pages/Dunder.vue') },
     ]
   }
 ]
