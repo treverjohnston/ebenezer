@@ -30,13 +30,13 @@ export default {
       description: "When Harvard Print and Copy Center recently expanded their business to Boise, Idaho they were in need of a modernized website that would reflect this. Ebenezer Websites LLC took up the task and has been maintaining the site since!"
     },
     {
-      url: "//www.rideforhopeidaho.com",
+      url: "//rfhi.ebenezerwebsites.com",
       img:
         "//res.cloudinary.com/treverscloud/image/upload/v1542827870/ebenezer/rfh.png",
       imgMob:
         "//res.cloudinary.com/treverscloud/image/upload/v1544409839/ebenezer/rfhmob.png",
       title: "Ride For Hope Idaho",
-      description: "Ebenezer Websites LLC revamped, and has been maintaining, the website for Ride For Hope Idaho since the beginning of 2018.  Since taking over maintaining and updating the website, this great charity ride has seen a dramatic increase in the amount of riders signing up every year.  This local Idaho charity bike ride has been helping the underserved get the healthcare they need since 2014. If you are looking for a bike ride near Boise, or simply want to donate to a great cause, be sure to check it out."
+      description: "Ebenezer Websites LLC revamped, and has been maintaining, the website for Ride For Hope Idaho since the beginning of 2018.  Since taking over maintaining and updating the website, this great charity ride has seen a dramatic increase in the amount of riders signing up every year.  This local Idaho charity bike ride has been helping the underserved get the healthcare they need since 2014. Unfortunately, the ride has been indefinitley suspended, so the site is no longer active."
     },
     {
       url: "//www.unorthodoxtech.com",
